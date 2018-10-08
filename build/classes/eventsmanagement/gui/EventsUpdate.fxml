@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import org.controlsfx.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="600.0" style="-fx-background-color: #A7A7A7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventsmanagement.controller.EventsUpdateController">
+    <children>
+        <Label layoutX="187.0" layoutY="80.0" text="Sujet :" textFill="#1f4980">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="sujetText" layoutX="274.0" layoutY="74.0" unFocusColor="#dce7f5">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="nomText" layoutX="274.0" layoutY="127.0" unFocusColor="#dce7f5">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="187.0" layoutY="133.0" text="Nom :" textFill="#1f4980">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="187.0" layoutY="192.0" text="Date :" textFill="#1f4980">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="date" layoutX="274.0" layoutY="192.0" prefHeight="25.0" prefWidth="157.0" />
+        <Label layoutX="154.0" layoutY="299.0" text="Nombre Place :" textFill="#1f4980">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="nbrText" layoutX="274.0" layoutY="294.0" unFocusColor="#dce7f5">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </JFXTextField>
+        <JFXComboBox fx:id="lieuCB" layoutX="274.0" layoutY="247.0" prefHeight="25.0" prefWidth="157.0" unFocusColor="#dce7f5" />
+        <Label layoutX="188.0" layoutY="247.0" text="Lieu :" textFill="#1f4980">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <JFXButton alignment="CENTER_RIGHT" layoutX="226.0" layoutY="348.0" onAction="#modifierEvenement" prefHeight="60.0" prefWidth="163.0" text="Modifier" textFill="#006fd8">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </JFXButton>
+        <ImageView fitHeight="38.0" fitWidth="49.0" layoutX="246.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../ressources/if_edit-validated_85309.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
